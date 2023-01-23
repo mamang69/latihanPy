@@ -1,57 +1,64 @@
-# data = "ini adalah string"
+# # data = "ini adalah string"
+# # print(data)
+# # print(type(data))
+# # 1. Cara membuat string
+
+# '''
+#   1.Dengan menggunakan single quote (' ')
+#   2.Dengan menggunakan double quote (" ")
+# '''
+
+# data = 'Menggunakan singgle quote'
 # print(data)
-# print(type(data))
-# 1. Cara membuat string
 
-'''
-  1.Dengan menggunakan single quote (' ')
-  2.Dengan menggunakan double quote (" ")
-'''
+# data = 'Menggunakan double quote'
+# print(data)
 
-data = 'Menggunakan singgle quote'
-print(data)
+# print('"halo apa kabar"')
+# print("'halo apa kabar'")
+# print("ini adalah hari jum'at")
 
-data = 'Menggunakan double quote'
-print(data)
+# # kita bisa menggunakan backlash (\)
+# # membuat tanda (') menjadi string , contoh :
 
-print('"halo apa kabar"')
-print("'halo apa kabar'")
-print("ini adalah hari jum'at")
+# print('mari kita solat jum\'at')
+# print('g\'day, isn\'t it ?')
 
-# kita bisa menggunakan backlash (\)
-# membuat tanda (') menjadi string , contoh :
+# # membuat backlash menjadi string
+# print("C:\\user\\ucup")
 
-print('mari kita solat jum\'at')
-print('g\'day, isn\'t it ?')
+# # tab (\t)
+# print("ucup \totong, jauhan")
 
-# membuat backlash menjadi string
-print("C:\\user\\ucup")
+# # backspace \b
+# print("ucup \botong")
 
-# tab (\t)
-print("ucup \totong, jauhan")
+# # newline/enter \n,
+# print("baris pertama. \nbaris kedua")  # LF -> Line Feed (UNIX)
+# print("baris pertama. \rbaris kedua")  # CR ->Carriage Return
+# # CLRF -> Line Feed Carriage return (Windows)
+# print("baris pertama. \r\nbaris kedua")
 
-# backspace \b
-print("ucup \botong")
+# # string literal atau raw (r)
+# # print('C:\new folder')  # harusnya menggunakan
 
-# newline/enter \n,
-print("baris pertama. \nbaris kedua")  # LF -> Line Feed (UNIX)
-print("baris pertama. \rbaris kedua")  # CR ->Carriage Return
-# CLRF -> Line Feed Carriage return (Windows)
-print("baris pertama. \r\nbaris kedua")
+# print(r'C:\new folder')
 
-# string literal atau raw (r)
-# print('C:\new folder')  # harusnya menggunakan
+# # multi line literal ("""""")
+# print("""
+# Nama  : Ucup
+# kelas : 3 SD
+# """)
 
-print(r'C:\new folder')
+# print(r"""
+# Nama  : Ucup
+# kelas : 3 SD
+# web   : www.ucup.com/newID
+# """)
 
-# multi line literal ("""""")
-print("""
-Nama  : Ucup
-kelas : 3 SD
-""")
+barang = float(input("Masukan Jumlah Produk yang di beli"))
 
-print(r""" 
-Nama  : Ucup
-kelas : 3 SD
-web   : www.ucup.com/newID
-""")
+if barang == 2:
+    print("Selamat anda mendapatkan diskon", barang-(barang*(10/100)))
+if barang == 3:
+    print("Selamat anda mendapatkan diskon", barang-(barang*(20/100)))
